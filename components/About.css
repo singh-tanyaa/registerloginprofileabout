@@ -1,0 +1,19 @@
+ .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 1500px;
+    max-width: 1500px;
+    color: #033b49;
+    padding: 20px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .about .container p {
+    color: gray;
+  }
+  @media (max-width: 1520px) {
+    .about .container {
+      min-width: 100%;
+    }
+  }

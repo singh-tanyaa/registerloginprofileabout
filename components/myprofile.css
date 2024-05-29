@@ -1,0 +1,46 @@
+
+.profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    min-height: 80vh;
+  }
+   .avatar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(-20deg);
+  }
+  
+  .avatar img {
+    height: 320px;
+  }
+   .user-detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .profile .user-detail p {
+    font-weight: 700;
+  }
+ 
+   .user-detail p span {
+    font-weight: 300;
+  }
+  @media (max-width: 1675px) {
+    .profile .avatar {
+      transform: skew(0);
+    }
+  }
+  @media (max-width: 1440px) {
+    .profile .avatar img {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+    }
+    .profile {
+      flex-direction: column;
+    }
+  }
